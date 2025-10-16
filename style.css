@@ -1,0 +1,29 @@
+  form {
+        border: 2px solid black;
+        justify-items: center;
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+      }
+      input {
+        height: 25px;
+        width: 120px;
+        margin: 5px 2px;
+      }
+      .dialpad {
+        display: grid;
+        grid: 1 1 160px;
+      }
+      .plate {
+        height: 30px;
+        width: 35px;
+        font-size: medium;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        justify-content: center;
+      }
+      .plate:hover {
+        color: white;
+        background-color: black;
+      }

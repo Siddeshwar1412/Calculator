@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <form id="clcForm" onsubmit="return false;">
+        <input
+          type="text"
+          placeholder="Enter number"
+          id="display"
+          readonly
+        /><br />
+        <input type="text" id="answer" placeholder="Answer" readonly /><br />
+        <div class="dialpad">
+          <span class="row">
+            <button class="plate" onclick="clearDisplay()">AC</button>
+            <button class="plate" onclick="appendToDisplay('%')">%</button>
+            <button class="plate" onclick="clearDisplay()">X</button>
+            <button class="plate" onclick="appendToDisplay('/')">/</button>
+          </span>
+          <span class="row">
+            <button class="plate" onclick="appendToDisplay('7')">7</button>
+            <button class="plate" onclick="appendToDisplay('8')">8</button>
+            <button class="plate" onclick="appendToDisplay('9')">9</button>
+            <button class="plate" onclick="appendToDisplay('*')">*</button>
+          </span>
+          <span class="row">
+            <button class="plate" onclick="appendToDisplay('4')">4</button>
+            <button class="plate" onclick="appendToDisplay('5')">5</button>
+            <button class="plate" onclick="appendToDisplay('6')">6</button>
+            <button class="plate" onclick="appendToDisplay('-')">-</button>
+          </span>
+          <span class="row">
+            <button class="plate" onclick="appendToDisplay('1')">1</button>
+            <button class="plate" onclick="appendToDisplay('2')">2</button>
+            <button class="plate" onclick="appendToDisplay('3')">3</button>
+            <button class="plate" onclick="appendToDisplay('+')">+</button>
+          </span>
+          <span class="row">
+            <button class="plate" onclick="appendToDisplay('00')">00</button>
+            <button class="plate" onclick="appendToDisplay('0')">0</button>
+            <button class="plate" onclick="appendToDisplay('.')">.</button>
+            <button class="plate" onclick="calculateResult()">=</button>
+          </span>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
